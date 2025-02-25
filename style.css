@@ -639,138 +639,69 @@ form textarea::placeholder {
         padding: 2rem 5%;
     }
 }
-
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
     }
-
     .navbar {
         display: none;
-        flex-direction: column;
         position: absolute;
         top: 80px;
         right: 0;
         width: 100%;
-        background: var(--bg-color);
+        background: rgba(22, 2, 41, 0.95);
         padding: 20px;
+        text-align: center;
+        flex-direction: column;
         border-radius: 10px;
-        border-top: .1rem solid rgba(0,0,0,.2);
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
-
-    .navbar.active{
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        margin: 3rem 0;
-        font-size: 2rem;
-
-    }
-
     .navbar.show {
         display: flex;
     }
-
-    .home {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-content h3 {
-        font-size: 2.8rem;
-    }
-
-    .home-content h1 {
-        font-size: 4.5rem;
-    }
-
-    .home-content p {
-        font-size: 1.6rem;
-    }
-
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-box {
-        width: 90%;
-    }
-
-    .volunteer-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .volunteer-image img {
-        width: 100%;
-    }
-
-    .skills-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
-@media (max-width: 617px) {
-    .courses-container {
-        grid-template-columns: 1fr; 
-    }
+.home {
+    text-align: center;
+    padding: 80px 5%;
+}
 
-    .skills-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.home-content h1 {
+    font-size: 4rem;
+}
 
-    .contact form .input-box input {
-        width: 100%;
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 3.5rem;
     }
 }
 
 @media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
-
     .home-content h1 {
-        font-size: 3.8rem;
-    }
-
-    .home-content h3 {
-        font-size: 2.5rem;
-    }
-
-    .home-content p {
-        font-size: 1.4rem;
-    }
-
-    .social-media {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .projects-container {
-        width: 100%;
-        padding: 0 5%;
-    }
-
-    .skills-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .volunteer-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
+        font-size: 3rem;
     }
 }
 
+@media (max-width: 375px) {
+    .home-content h1 {
+        font-size: 2.8rem;
+    }
+    .home-content p {
+        font-size: 1.4rem;
+    }
+    .social-media {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+    .home-content p {
+        font-size: 1.2rem;
+    }
+}
 /*animations*/
 @keyframes fadeInUp {
     from {
